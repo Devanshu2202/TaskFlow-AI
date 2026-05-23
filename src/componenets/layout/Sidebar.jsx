@@ -6,9 +6,22 @@ import {
     FaCog,
 } from "react-icons/fa";
 
-const Sidebar = () => {
+const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
     return (
-        <div className="w-64 bg-black text-white p-5 hidden md:block">
+        <div className={`
+    fixed md:static top-0 left-0 z-50
+    h-screen w-64 bg-black text-white p-5
+    transform transition-transform duration-300
+    ${isSidebarOpen ? "translate-x-0" : "-translate-x-full"}
+    md:translate-x-0
+  `}>
+
+            <button
+                className="md:hidden mb-5"
+                onClick={() => setIsSidebarOpen(false)}
+            >
+                ✕
+            </button>
 
             <h1 className="text-2xl font-bold mb-10">
                 TaskFlow AI

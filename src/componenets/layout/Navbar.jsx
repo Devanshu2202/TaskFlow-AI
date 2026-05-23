@@ -1,8 +1,15 @@
-import { FaBell, FaMoon } from "react-icons/fa";
+import { FaBell, FaMoon, FaBars } from "react-icons/fa";
 
-const Navbar = () => {
+const Navbar = ({ setIsSidebarOpen }) => {
     return (
         <div className="bg-white shadow px-6 py-4 flex items-center justify-between">
+
+            <button
+                className="md:hidden text-2xl"
+                onClick={() => setIsSidebarOpen(true)}
+            >
+                <FaBars />
+            </button>
 
             <input
                 type="text"
