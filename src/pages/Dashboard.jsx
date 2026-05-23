@@ -1,5 +1,6 @@
 import DashboardLayout from "../layouts/DashboardLayout";
 import StatCard from "../componenets/dashboard/StatCard";
+import RecentTasks from "../components/dashboard/RecentTasks";
 
 const Dashboard = () => {
     return (
@@ -19,7 +20,9 @@ const Dashboard = () => {
 
                     <StatCard title="Productivity" value="92%" />
 
+
                 </div>
+                <RecentTasks />
             </div>
         </DashboardLayout>
     );
