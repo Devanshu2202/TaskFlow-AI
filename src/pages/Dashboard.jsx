@@ -1,4 +1,5 @@
 import DashboardLayout from "../layouts/DashboardLayout";
+import StatCard from "../componenets/dashboard/StatCard";
 
 const Dashboard = () => {
     return (
@@ -9,21 +10,15 @@ const Dashboard = () => {
                 </h1>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-                    <div className="bg-white p-5 rounded-xl shadow">
-                        Total Tasks
-                    </div>
 
-                    <div className="bg-white p-5 rounded-xl shadow">
-                        Completed
-                    </div>
+                    <StatCard title="Total Tasks" value="120" />
 
-                    <div className="bg-white p-5 rounded-xl shadow">
-                        Pending
-                    </div>
+                    <StatCard title="Completed" value="80" />
 
-                    <div className="bg-white p-5 rounded-xl shadow">
-                        Productivity
-                    </div>
+                    <StatCard title="Pending" value="30" />
+
+                    <StatCard title="Productivity" value="92%" />
+
                 </div>
             </div>
         </DashboardLayout>
