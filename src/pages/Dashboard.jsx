@@ -1,6 +1,6 @@
 import DashboardLayout from "../layouts/DashboardLayout";
 import StatCard from "../componenets/dashboard/StatCard";
-import RecentTasks from "../components/dashboard/RecentTasks";
+import RecentTasks from "../componenets/dashboard/RecentTasks";
 
 const Dashboard = () => {
     return (
